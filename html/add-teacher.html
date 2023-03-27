@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a description">
+        <meta name="keywords" content="HTML,CSS,JS">
+        <meta name="author" content="Sumit Saurabh">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <title>Assignment Tracker</title>
+    </head>
+    <body>
+      <div class="container-fluid">
+          <nav class="navbar navbar-expand-mg navbar-expand-lg fixed-top navbar-dark bg-dark" data-bs-theme="dark">
+              <div class="container-fluid">
+              <a class="navbar-brand" href="#">Assignment Tracker</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#add" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">View</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Add Teacher</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Add Student</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Remove Teacher</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Remove Student</a>
+                  </li>
+                  </ul>
+              </div>
+              </div>
+          </nav>
+            
+
+        <main>
+          <div class="row">
+              <div class="col-2 sidebar">
+                  <ul class="list-group">
+                      <li class="list-group-item list-group-item-dark">Admin Info</li>
+                      <li class="list-group-item list-group-item-dark">ID</li>
+                      <li class="list-group-item list-group-item-dark">Name</li>
+                      <li class="list-group-item list-group-item-dark">E-mail</li>
+                  </ul>
+              </div>
+              <div class="col-10">
+                <form>
+                    <label for="id">Teacher ID</label>
+                    <input type="text" id="id" name="id" placeholder="Teacher ID" />
+                    <br />
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name" />
+                    <br />
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" />
+                    <br />
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="E-mail" />
+                    <br />
+                    <label for="pwd">Password</label>
+                    <input type="password" id="pwd" name="pwd" placeholder="Password" />
+                    <br />
+                    <input type="reset" />
+                    <input type="submit" />
+                </form>
+              </div>
+          </div>
+        </main>
+      
+        <footer class="footer fixed-bottom text-center bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <p class="text-body-secondary">&copy;Group-33 (Sumit Saurabh, Priya Ranjan, Rajeev Ranjan) @2023</p>
+        </footer>
+      </div>
+    </body>
+</html>
