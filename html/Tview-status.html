@@ -23,9 +23,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Status</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Upload</a>
-                    </li>
                     </ul>
                 </div>
                 </div>
@@ -36,7 +33,7 @@
                 <div class="row">
                     <div class="col-2 sidebar">
                         <ul class="list-group">
-                            <li class="list-group-item list-group-item-dark">Teacher Info</li>
+                            <li class="list-group-item list-group-item-dark">Faculty Info</li>
                             <li class="list-group-item list-group-item-dark">ID</li>
                             <li class="list-group-item list-group-item-dark">Name</li>
                             <li class="list-group-item list-group-item-dark">E-mail</li>
@@ -45,27 +42,79 @@
                     </div>
                     <div class="col-10 content">
                         <form>
-                            Select Subject : 
-                            <label for="cs801">CS-801</label>
-                            <input type="radio" id="cs801" name="Subject" value="CS-801" />
-                            <label for="cs802">CS-802</label>
-                            <input type="radio" id="cs802" name="Subject" value="CS-802" />
-                            <label for="cs803">CS-803</label>
-                            <input type="radio" id="cs803" name="Subject" value="CS-803" />
+
+                            <div class="mb-4 row">
+                                <label class="col-sm-2 col-form-label col-form-label-lg">Select Subject</label>
+                                <div class="col-sm-9 btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="subject" id="cs801" autocomplete="off" checked>
+                                    <label class="btn btn-outline-dark" for="cs801">IoT (CS-801)</label>
+                                  
+                                    <input type="radio" class="btn-check" name="subject" id="cs802" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="cs802">Cloud Computing (CS-802)</label>
+                                  
+                                    <input type="radio" class="btn-check" name="subject" id="cs803" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="cs803">Enterpreneurship (CS-803)</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-4 row">
+                                <label for="email" class="col-sm-2 col-form-label col-form-label-lg">Select Assignment</label>
+                                <div class="col-sm-9 btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="assignment" id="assignment1" autocomplete="off" checked>
+                                    <label class="btn btn-outline-dark" for="assignment1">Assignment 1</label>
+                                  
+                                    <input type="radio" class="btn-check" name="assignment" id="assignment2" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="assignment2">Assignment 2</label>
+                                  
+                                    <input type="radio" class="btn-check" name="assignment" id="assignment3" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="assignment3">Assignment 3</label>
+                                  
+                                    <input type="radio" class="btn-check" name="assignment" id="assignment4" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="assignment4">Assignment 4</label>
+                                  
+                                    <input type="radio" class="btn-check" name="assignment" id="assignment5" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="assignment5">Assignment 5</label>
+                                </div>
+                            </div>
                             <br />
-                            
-                            Select Assignment : 
-                            <label for="assignment1">Assignment-1</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="1" />
-                            <label for="assignment1">Assignment-2</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="2" />
-                            <label for="assignment1">Assignment-3</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="3" />
-                            <label for="assignment1">Assignment-4</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="2" />
-                            <label for="assignment1">Assignment-5</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="3" />
-                            <br />
+
+                            <table class="table table-success table-striped">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Student</th>
+                                    <th scope="col">Submitted</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Student 1</td>
+                                    <td>Yes</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>Student 2</td>
+                                    <td>Yes</td>
+                                  </tr>
+                                  <tr>
+                                    <td>3</td>
+                                    <td>Student 3</td>
+                                    <td>No</td>
+                                  </tr>
+                                  <tr>
+                                    <td>4</td>
+                                    <td>Student 4</td>
+                                    <td>No</td>
+                                  </tr>
+                                  <tr>
+                                    <td>5</td>
+                                    <td>Student 5</td>
+                                    <td>No</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+
                         </form>
                     </div>
                 </div>

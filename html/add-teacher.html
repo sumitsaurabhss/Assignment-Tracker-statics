@@ -24,13 +24,13 @@
                       <a class="nav-link" href="#">View</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Add Teacher</a>
+                      <a class="nav-link active" aria-current="page" href="#">Add Faculty</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#">Add Student</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Remove Teacher</a>
+                      <a class="nav-link" href="#">Remove Faculty</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#">Remove Student</a>
@@ -53,23 +53,49 @@
               </div>
               <div class="col-10 content">
                 <form>
-                    <label for="id">Teacher ID</label>
-                    <input type="text" id="id" name="id" placeholder="Teacher ID" />
+                    <div class="mb-2 row">
+                        <label for="id" class="col-sm-2 col-form-label col-form-label-lg">Faculty ID</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control form-control-lg" id="id" placeholder="Faculty ID">
+                        </div>
+                    </div>
+
+                    <div class="mb-2 row">
+                        <label for="name" class="col-sm-2 col-form-label col-form-label-lg">Name</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control form-control-lg" id="name" placeholder="Name">
+                        </div>
+                    </div>
+
+                    <div class="mb-2 row">
+                        <label for="subject" class="col-sm-2 col-form-label col-form-label-lg">Subject</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control form-control-lg" id="subject" placeholder="Subject">
+                        </div>
+                    </div>
+
+                    <div class="mb-2 row">
+                        <label for="email" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+                        <div class="col-sm-9">
+                          <input type="email" class="form-control form-control-lg" id="email" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="mb-2 row">
+                        <label for="pwd" class="col-sm-2 col-form-label col-form-label-lg">Password</label>
+                        <div class="col-sm-9">
+                          <input type="password" class="form-control form-control-lg" id="pwd" placeholder="Password">
+                        </div>
+                    </div>
                     <br />
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Name" />
                     <br />
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Subject" />
-                    <br />
-                    <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email" placeholder="E-mail" />
-                    <br />
-                    <label for="pwd">Password</label>
-                    <input type="password" id="pwd" name="pwd" placeholder="Password" />
-                    <br />
-                    <input type="reset" />
-                    <input type="submit" />
+                    <div class="mb-4 row">
+                        <div class="col-sm-6 col-form-label col-form-label-lg"></div>
+                        <div class="mb-4 col-sm-5 btn-group" role="group">
+                            <input type="reset" class="btn btn-outline-danger" />
+                            <input type="submit" class="btn btn-outline-success" />
+                        </div>
+                    </div>
                 </form>
               </div>
           </div>

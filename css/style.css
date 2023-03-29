@@ -48,7 +48,7 @@ body {
   position: relative;
   height: 87.1vh;
   left: 20%;
-  overflow-y: scroll;
+  overflow-y: visible;
   overflow-x:hidden;
   top: 2vh;
 }
@@ -62,4 +62,13 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     top: 1.1vh;
+}
+
+.table{
+  max-width: 75vw;
+}
+
+.form-control{
+  
+  max-width: 60vw;
 }

@@ -24,13 +24,13 @@
                         <a class="nav-link active" aria-current="page" href="#">View</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Add Teacher</a>
+                        <a class="nav-link" href="#">Add Faculty</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Add Student</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Remove Teacher</a>
+                        <a class="nav-link" href="#">Remove Faculty</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Remove Student</a>
@@ -53,25 +53,63 @@
                     </div>
                     <div class="col-10 content">
                         <form>
-                            <label for="cs801">CS-801</label>
-                            <input type="radio" id="cs801" name="Subject" value="CS-801" />
-                            <label for="cs802">CS-802</label>
-                            <input type="radio" id="cs802" name="Subject" value="CS-802" />
-                            <label for="cs803">CS-803</label>
-                            <input type="radio" id="cs803" name="Subject" value="CS-803" />
+
+                            <div class="mb-4 row">
+                                <div class="col-sm-11 btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="view" id="teacher" autocomplete="off" checked>
+                                    <label class="btn btn-outline-dark" for="teacher">Faculties</label>
+                                  
+                                    <input type="radio" class="btn-check" name="view" id="student" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="student">Students</label>
+                                </div>
+                            </div>
+
                             <br />
+                            <br />
+
+                            <table class="table table-success table-striped">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Faculty</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Subject</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Teacher 1</td>
+                                    <td>teacher1@amail.com</td>
+                                    <td>IoT</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>Teacher 2</td>
+                                    <td>teacher2@amail.com</td>
+                                    <td>Cloud Computing</td>
+                                  </tr>
+                                  <tr>
+                                    <td>3</td>
+                                    <td>Teacher 3</td>
+                                    <td>teacher3@amail.com</td>
+                                    <td>IoT</td>
+                                  </tr>
+                                  <tr>
+                                    <td>4</td>
+                                    <td>Teacher 4</td>
+                                    <td>teacher4@amail.com</td>
+                                    <td>IoT</td>
+                                  </tr>
+                                  <tr>
+                                    <td>5</td>
+                                    <td>Teacher 5</td>
+                                    <td>teacher5@amail.com</td>
+                                    <td>Enterpreneurship</td>
+                                  </tr>
+                                </tbody>
+                            </table>
                             
-                            <label for="assignment1">Assignment-1</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="1" />
-                            <label for="assignment1">Assignment-2</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="2" />
-                            <label for="assignment1">Assignment-3</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="3" />
-                            <label for="assignment1">Assignment-4</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="2" />
-                            <label for="assignment1">Assignment-5</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="3" />
-                            <br />
                         </form>
                     </div>
                 </div>

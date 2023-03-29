@@ -40,33 +40,65 @@
                             <li class="list-group-item list-group-item-dark">ID</li>
                             <li class="list-group-item list-group-item-dark">Name</li>
                             <li class="list-group-item list-group-item-dark">E-mail</li>
-                            <li class="list-group-item list-group-item-dark">Class</li>
+                            <li class="list-group-item list-group-item-dark">Batch</li>
                         </ul>
                     </div>
                     <div class="col-10 content">
                         <form>
-                            Select Subject : 
-                            <label for="cs801">CS-801</label>
-                            <input type="radio" id="cs801" name="Subject" value="CS-801" />
-                            <label for="cs802">CS-802</label>
-                            <input type="radio" id="cs802" name="Subject" value="CS-802" />
-                            <label for="cs803">CS-803</label>
-                            <input type="radio" id="cs803" name="Subject" value="CS-803" />
+                            <form>
+
+                                <div class="mb-4 row">
+                                    <label class="col-sm-2 col-form-label col-form-label-lg">Select Subject</label>
+                                    <div class="col-sm-9 btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="subject" id="cs801" autocomplete="off" checked>
+                                        <label class="btn btn-outline-dark" for="cs801">IoT (CS-801)</label>
+                                      
+                                        <input type="radio" class="btn-check" name="subject" id="cs802" autocomplete="off">
+                                        <label class="btn btn-outline-dark" for="cs802">Cloud Computing (CS-802)</label>
+                                      
+                                        <input type="radio" class="btn-check" name="subject" id="cs803" autocomplete="off">
+                                        <label class="btn btn-outline-dark" for="cs803">Enterpreneurship (CS-803)</label>
+                                    </div>
+                                </div>
+    
+                            </form>
                             <br />
-                            
-                            
-                            <label for="assignment1">Assignment-1</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="1" />
-                            <label for="assignment1">Assignment-2</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="2" />
-                            <label for="assignment1">Assignment-3</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="3" />
-                            <label for="assignment1">Assignment-4</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="2" />
-                            <label for="assignment1">Assignment-5</label>
-                            <input type="radio" id="assignment1" name="Assignment" value="3" />
                             <br />
-                        </form>
+                            <br />
+
+                           
+                            <table class="table table-success table-striped">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Assignment</th>
+                                    <th scope="col">Submitted</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Assignment 1</td>
+                                    <td>Yes</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Assignment 2</td>
+                                    <td>Yes</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Assignment 3</td>
+                                    <td>No</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Assignment 4</td>
+                                    <td>No</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Assignment 5</td>
+                                    <td>No</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+
+
                     </div>
                 </div>
             </main>
